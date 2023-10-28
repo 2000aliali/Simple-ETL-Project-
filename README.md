@@ -34,6 +34,8 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
 -  then run  ```python  trensformation.py ```
 -  after run  ```python Csv2PostgresLoader.py ```
 ##### the result is :
+![Screenshot](https://github.com/2000aliali/Simple-ETL-Project-/blob/main/image3.png)
+#### And 
 ![Screenshot](https://github.com/2000aliali/Simple-ETL-Project-/blob/main/image%202.png)
 
 
