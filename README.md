@@ -5,3 +5,10 @@ This project involves creating an automated pipeline to collect product data fro
 ## Project Overview
 ### The Workflow
 ![Screenshot](https://github.com/2000aliali/Simple-ETL-Project-/blob/main/Image1.png)
+#### Web Scraping: Utilize Beautiful Soup to extract product data (e.g., name, price, description) from the Jumia website.
+
+#### CSV File Creation: Use Pandas to structure the scraped data into a DataFrame and save it as an Excel file for temporary storage.
+
+#### Data Extraction from CSV: Retrieve data from the Excel file using Pandas, ensuring data integrity.
+
+##### PostgreSQL Database Loading: Leverage psycopg2  to connect to a PostgreSQL database. Automatically generate table based on column names and data types. Load the extracted data into the appropriate table.(the table takes the same name of the excel file)
