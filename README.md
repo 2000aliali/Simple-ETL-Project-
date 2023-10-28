@@ -9,11 +9,21 @@ This project involves creating an automated pipeline to collect product data fro
 Utilize Beautiful Soup to extract product data (e.g., name, price, description) from the Jumia website.
 
 #### CSV File Creation:
-Use Pandas to structure the scraped data into a DataFrame and save it as an Excel file for temporary storage.
+Use Pandas to structure the scraped data into a DataFrame and save it as an CSV file for temporary storage.
 
 #### Data Extraction from CSV:
-Retrieve data from the Excel file using Pandas, ensuring data integrity.
+Retrieve data from the CSV file  file using Pandas, ensuring data integrity.
 
 #### PostgreSQL Database Loading;
-Leverage psycopg2 to connect to a PostgreSQL database. Automatically generate table based on column names and data types. Load the extracted data into the appropriate table (the table takes the same name of the csv file).
+Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extracted data into the appropriate table (the table takes the same name of the csv file).
+### Tool Used 
+Python
+#### Beautiful Soup:
+For web scraping.
+#### Pandas: 
+For data manipulation .
+#### PostgreSQL:
+Database management system.
+##### Psycopg2: 
+To interact with the PostgreSQL database.
 
