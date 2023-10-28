@@ -22,4 +22,11 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
 -  Pandas: For data manipulation .
 -  PostgreSQL: Database management system.
 -  Psycopg2:  To interact with the PostgreSQL database.
+### Runing the Project
+
+-  First try to run ``` JumiaDataScraper.py ```
+-  create in postgresql ``` CREATE DATABASE dbname1;```
+-  
+
+
 
