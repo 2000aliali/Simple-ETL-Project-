@@ -16,14 +16,10 @@ Retrieve data from the CSV file  file using Pandas, ensuring data integrity.
 
 #### PostgreSQL Database Loading;
 Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extracted data into the appropriate table (the table takes the same name of the csv file).
-### Tool Used 
-Python
-#### Beautiful Soup:
-For web scraping.
-#### Pandas: 
-For data manipulation .
-#### PostgreSQL:
-Database management system.
-##### Psycopg2: 
-To interact with the PostgreSQL database.
+### Tool Used :
+-  Python
+-  Beautiful Soup: For web scraping.
+-  Pandas: For data manipulation .
+-  PostgreSQL: Database management system.
+-  Psycopg2:  To interact with the PostgreSQL database.
 
