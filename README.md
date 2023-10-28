@@ -24,9 +24,16 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
 -  Psycopg2:  To interact with the PostgreSQL database.
 ### Runing the Project
 
--  First try to run ``` JumiaDataScraper.py ```
+-  First try to run ```python  JumiaDataScraper.py ```
 -  create in postgresql ``` CREATE DATABASE dbname1;```
--  
+-  and create table :  ```CREATE TABLE xiaomi_redmi_products (
+    name TEXT,
+    price FLOAT,
+    img_url TEXT
+);
+ ```
+-  then run  ```python  trensformation.py ```
+-  after run "python Csv2PostgresLoader.py ```
 
 
 
