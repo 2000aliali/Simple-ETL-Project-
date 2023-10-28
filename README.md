@@ -32,7 +32,10 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
     img_url TEXT
 );```
 -  then run  ```python  trensformation.py ```
--  after run "python Csv2PostgresLoader.py ```
+-  after run  ```python Csv2PostgresLoader.py ```
+##### the result is :
+
+
 
 
 
