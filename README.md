@@ -4,4 +4,4 @@ This project focuses on extracting data from the Jumia website using Beautiful S
 This project involves creating an automated pipeline to collect product data from the Jumia website, store it in an ``` CSV ``` file, and then transfer it into a``` PostgreSQL``` database. By utilizing Python libraries like ```BeautifulSoup```,``` Pandas```, and ``` psycopg2```, the process is streamlined and can be executed with ease.
 ## Project Overview
 ### The Workflow
-![Screenshot]()
+![Screenshot](https://github.com/2000aliali/Simple-ETL-Project-/blob/main/Image1.png)
