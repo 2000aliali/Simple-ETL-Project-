@@ -7,7 +7,7 @@ from io import StringIO
 db_host = "localhost"
 db_port = "5432"
 db_user = "postgres"
-db_password = "Aliel2000@"
+db_password = "your password bro"
 db_name = "dbname1"
 
 # Directory containing CSV files
