@@ -30,8 +30,7 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
     name TEXT,
     price FLOAT,
     img_url TEXT
-);
- ```
+);```
 -  then run  ```python  trensformation.py ```
 -  after run "python Csv2PostgresLoader.py ```
 
