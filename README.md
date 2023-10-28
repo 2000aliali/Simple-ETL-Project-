@@ -26,14 +26,14 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
 - Begin by executing `python JumiaDataScraper.py`
 - In PostgreSQL, create the database:
   ```sql
-  CREATE DATABASE dbname1; ```
+  CREATE DATABASE dbname1; 
 - Next, create the table with the following structure: 
   ```sql
   CREATE TABLE xiaomi_redmi_products1 (
       name TEXT,
       price FLOAT,
       img_url TEXT
-  );```
+  );
 -  Proceed by running ```python  trensformation.py ```
 -  Finally, execute ```python Csv2PostgresLoader.py ```
 ##### Resultant Output: 
