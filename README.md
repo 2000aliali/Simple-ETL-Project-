@@ -24,7 +24,8 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
 -  Psycopg2:  To interact with the PostgreSQL database.
 ### Runing the Project
 - Begin by executing `python JumiaDataScraper.py`
-- In PostgreSQL, create the database:  ```sql
+- In PostgreSQL, create the database:
+  ```sql
   CREATE DATABASE dbname1; ```
 - Next, create the table with the following structure: 
   ```sql
