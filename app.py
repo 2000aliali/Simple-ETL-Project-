@@ -1,28 +1,57 @@
-import pandas as pd
 import psycopg2
-from sqlalchemy import create_engine
+import pandas as pd
+import os
+from io import StringIO
 
-# Load your Excel file into a DataFrame
-nom_fichier_excel = "xiaomi_redmi_products.xlsx"
-df = pd.read_excel(nom_fichier_excel)
+# PostgreSQL database connection parameters
+db_host = "localhost"
+db_port = "5432"
+db_user = "postgres"
+db_password = "Aliel2000@"
+db_name = "dbname1"
 
-# Define your PostgreSQL connection parameters
-db_config = {
-    'host': 'localhost',
-    'database': 'dbname1',
-    'user': 'postgres',
-    'password': 'Aliel2000@'
-}
+# Directory containing CSV files
+data_directory = r'C:\Users\Lenovo\etlwebscraping'
 
-# Create a connection to the PostgreSQL database
-conn = psycopg2.connect(**db_config)
+def load_data_into_postgres(df, table_name):
+    try:
+        conn = psycopg2.connect(
+            dbname=db_name,
+            user=db_user,
+            password=db_password,
+            host=db_host,
+            port=db_port
+        )
+        cursor = conn.cursor()
 
-# Use SQLAlchemy to create an engine
-engine = create_engine(f'postgresql://{db_config["user"]}:{db_config["password"]}@{db_config["host"]}/{db_config["database"]}')
+        print(f'Importing data into table {table_name}...')
 
-# Write the DataFrame to the PostgreSQL database
-df.to_sql('your_table_name', engine, if_exists='replace', index=False)
+        output = StringIO()
+        df.to_csv(output, sep='\t', header=False, index=False)
+        output.seek(0)
 
-# Close the database connection
-conn.close()
+       
+        cursor.copy_expert(f"COPY {table_name} FROM STDIN", output)
 
+        conn.commit()
+        cursor.close()
+        conn.close()
+
+        print("Data imported successfully.")
+    except Exception as e:
+        print(f"Data load error: {str(e)}")
+
+def extract_and_load_data():
+    try:
+        for filename in os.listdir(data_directory):
+            if filename == "XIAOMI_Redmi_products1.csv":
+                file_path = os.path.join(data_directory, filename)
+                if os.path.isfile(file_path):
+                    df = pd.read_csv(file_path)
+                    load_data_into_postgres(df, 'xiaomi_redmi_products1')
+        print("Data extracted and loaded successfully.")
+    except Exception as e:
+        print("Data extraction and load error: " + str(e))
+
+if __name__ == "__main__":
+    extract_and_load_data()
