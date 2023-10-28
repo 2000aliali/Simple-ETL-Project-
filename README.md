@@ -14,6 +14,6 @@ Use Pandas to structure the scraped data into a DataFrame and save it as an Exce
 #### Data Extraction from CSV:
 Retrieve data from the Excel file using Pandas, ensuring data integrity.
 
-#### PostgreSQL Database Loading:
+#### PostgreSQL Database Loading;
 Leverage psycopg2 to connect to a PostgreSQL database. Automatically generate table based on column names and data types. Load the extracted data into the appropriate table (the table takes the same name of the csv file).
 
