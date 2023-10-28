@@ -25,7 +25,7 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
 ### Runing the Project
 - Begin by executing `python JumiaDataScraper.py`
 - In PostgreSQL, create the database:  ```sql
-- CREATE DATABASE dbname1;  ```
+  CREATE DATABASE dbname1; ```
 - Next, create the table with the following structure: 
   ```sql
   CREATE TABLE xiaomi_redmi_products1 (
@@ -38,7 +38,7 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
 ##### Resultant Output: 
 ![Screenshot](https://github.com/2000aliali/Simple-ETL-Project-/blob/main/image3.png)
 #### Additionally:
-![Screenshot]( )
+![Screenshot](https://github.com/2000aliali/Simple-ETL-Project-/blob/main/image%202.png )
 
 
 
