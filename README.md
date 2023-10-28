@@ -23,19 +23,20 @@ Leverage psycopg2 to connect to a PostgreSQL database.afther that Load the extra
 -  PostgreSQL: Database management system.
 -  Psycopg2:  To interact with the PostgreSQL database.
 ### Runing the Project
-
--  First try to run ```python  JumiaDataScraper.py ```
--  create in postgresql ``` CREATE DATABASE dbname1;```
--  and create table :  ```CREATE TABLE xiaomi_redmi_products1 (
-    name TEXT,
-    price FLOAT,
-    img_url TEXT
-);```
--  then run  ```python  trensformation.py ```
--  after run  ```python Csv2PostgresLoader.py ```
-##### the result is :
+- Begin by executing `python JumiaDataScraper.py`
+- In PostgreSQL, create the database: `CREATE DATABASE dbname1;`
+- Next, create the table with the following structure: 
+  ```sql
+  CREATE TABLE xiaomi_redmi_products1 (
+      name TEXT,
+      price FLOAT,
+      img_url TEXT
+  );```
+-  Proceed by running ```python  trensformation.py ```
+-  Finally, execute ```python Csv2PostgresLoader.py ```
+##### Resultant Output: 
 ![Screenshot](https://github.com/2000aliali/Simple-ETL-Project-/blob/main/image3.png)
-#### And 
+#### Additionally:
 ![Screenshot](https://github.com/2000aliali/Simple-ETL-Project-/blob/main/image%202.png)
 
 
